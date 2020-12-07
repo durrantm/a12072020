@@ -80,7 +80,7 @@ function App() {
     // TODO
     sums = forGroup.one;
     return sums;
-  }, [ total, sums ] );
+  }, [ total, rate ] );
   return (
     <div className="App">
       <div >
