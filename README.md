@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+## Simple Learning Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  Application allow you to calculate a tip
 
-## Available Scripts
+### Task:
 
-In the project directory, you can run:
+Get all the different group size amounts amounts to update when the total is changed
+If necessary, get useEffect and useRef to work correctly. (basic use of them)
 
-### `yarn start`
+### Details:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Very simple react app to calculate tips, as in for meals, etc.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- App works. If amount is changed, all the various party size amount share of the 'bill' changes
 
-### `yarn test`
+- The grand total updates correctly when percentages are changed (by clicking on them)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The 'underline' uses state and is updated correctly when percentages are changed
 
-### `yarn build`
+### Problem:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The shared people amounts other than grand total are not updating when percentages change (by clicking them).
+  When I change the amount all amount change, but when I click on the percentage values they do not (but total does).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Notes:
+  I have useEffect on line 79 but not configured correctly.  Currently useEffect is not doing anything (you can comment it out).
+  I tried moving the code that sets values inside the useEffect but it got confusing, I had naming issues
